@@ -6,31 +6,189 @@
 
 @font-face {
     font-family: 'LEMON MILK REGULAR';
-    src: url(/css/fonts/LEMONMILK-Regular.otf);
+    src: url(../css/fonts/LEMONMILK-Regular.otf);
 }
 @font-face {
     font-family: 'LEMON MILK BOLD';
-    src: url(/css/fonts/LEMONMILK-Bold.otf);
+    src: url(../css/fonts/LEMONMILK-Bold.otf);
 }
 @font-face {
     font-family: 'COCOGOOSE ULTRALIGHT';
-    src: url(css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
+    src: url(../css/fonts/Cocogoose\ Pro\ Ultralight-trial.ttf);
 }
 
 @font-face {
     font-family: 'COCOGOOSE DEMIBOLD';
-    src: url(css/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+    src: url(../css/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
 }
 
 @font-face {
     font-family: 'COCOGOOSE LIGHT';
-    src: url(css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
+    src: url(../css/fonts/Cocogoose\ Pro\ Light-trial.ttf);
 }
-* {
-    margin: 20px;
-    padding: 0px;
-    box-sizing: border-box;
+
+header{
+    padding: 2em 0;
+    padding-bottom: .5em;
 }
+
+nav{
+    font-family: 'LEMON MILK REGULAR';
+    padding-right: calc(var(--bs-gutter-x) * 2) !important;
+    padding-left: calc(var(--bs-gutter-x) * 2) !important;
+}
+
+.placeholder-nav span{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    color: #c7c7c7c7;
+}
+
+nav ul{
+    padding: 0 !important;
+    list-style: none;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: .8em;
+}
+
+nav ul li{
+    margin: 0 1.5em;
+}
+
+.placeholder-nav{
+    position: absolute;
+    padding-left: 1em;
+    display: block;
+}
+
+#input-header, #input-header-mobile{
+    font-family: 'COCOGOOSE DEMIBOLD';
+    border: none;
+    border-radius: 2em;
+    background-color: #F0F0F0;
+    height: 2.3em;
+    padding-left: 1em;
+
+}
+
+.input-buscar-container{
+    margin-right: 2em !important;
+}
+
+.input-buscar-container input:valid ~ label,
+.input-buscar-container input:focus ~ label,
+.input-buscar-container-mobile input:valid ~ label,
+.input-buscar-container-mobile input:focus ~ label{
+    display: none;
+}
+
+.dropDown-perfil-icon{
+    position: absolute;
+    right: 0;
+    font-family: 'COCOGOOSE DEMIBOLD';
+    right: 3.8em;
+    background-color: white;
+    padding: 1em 0;
+    padding-right: 5em;
+    padding-left: .4em;
+    filter: drop-shadow(-2px 6px 4px rgba(0, 0, 0, 0.25));
+    display: none;
+}
+
+.dropDown-perfil-icon div img{
+    width: 1.5em;
+    margin-right: .4em;
+}
+
+.dropDown-perfil-icon div a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.pc-layout{
+    display: flex !important;
+    align-items: center;
+}
+
+.mobile-layout{
+    display: none !important; 
+}
+
+.mobile-layout img{
+    width: 1.6em;
+    margin: 0 1em;
+}
+
+.mid-items-nav{
+    display: flex;
+}
+
+#input-header-mobile{
+    width: 100%;
+    margin: 0;
+}
+
+.mobile-input{
+    display: none;
+}
+
+.side-menu-container{
+    position: absolute;
+    background-color: #00000067;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.side-menu{
+    background-color: white;
+    width: 250px;
+    height: 100vh;
+    right: 0;
+    position: absolute;
+}
+
+.close-icon-side-bar img{
+    width: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.topicos-side-bar ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 2em;
+    margin-top: 3em;
+    font-family: 'COCOGOOSE DEMIBOLD';
+
+}
+
+.topicos-side-bar ul li{
+    margin-bottom: 1.5em;
+}
+
+.topicos-side-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.FRTXT{
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'COCOGOOSE LIGHT';
+}
+
 
 img {
     max-width: 100%;
